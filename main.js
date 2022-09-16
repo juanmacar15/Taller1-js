@@ -1,15 +1,14 @@
-alert('hallar la longitud y el area de un circulo')
+alert('convertir velocidad en m/s')
 
-const pi = 3.1416;
+let dis = parseInt(prompt('Ingrese la distancia en km'));
+let tiempo = parseInt(prompt('Ingrese el tiempo que demoro'));
 
-let radio = parseInt(prompt('Ingrese el radio del circulo'));
+let metros = dis * 1000;
+let seg = tiempo * 60;
 
+let vel = metros / seg
 
-let long = 2 * pi * radio;
-let area = pi * radio**2;
+document.getElementById('vel').innerHTML = vel +' m/s';
 
-
-document.getElementById('long').innerHTML = long;
-document.getElementById('area').innerHTML = area;
 
 
