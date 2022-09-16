@@ -1,14 +1,13 @@
-alert('convertir velocidad en m/s')
+alert('hallar el volumen de una esfera')
 
-let dis = parseInt(prompt('Ingrese la distancia en km'));
-let tiempo = parseInt(prompt('Ingrese el tiempo que demoro'));
+const pi = 3.1416;
 
-let metros = dis * 1000;
-let seg = tiempo * 60;
+let radio = parseInt(prompt('Ingrese el radio de la esfera'));
 
-let vel = metros / seg
 
-document.getElementById('vel').innerHTML = vel +' m/s';
+let vol = 4/3 * pi * radio ** 3;
+
+document.getElementById('vol').innerHTML = vol;
 
 
 
