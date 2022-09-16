@@ -1,15 +1,14 @@
-alert('hallar el area y el volumen de un cilindro')
+alert('hallar la raiz real de la siguiente ecuacion a * x2 + b * x + c siendo x un valor constante ')
 
-const pi = 3.1416;
+const x = 3;
 
-let rad = parseInt(prompt('Ingrese el raio del cilindro'));
-let alt = parseInt(prompt('Ingrese la altura del cilindro'));
+let a = parseInt(prompt('Ingrese el valor de a'));
+let b = parseInt(prompt('Ingrese el valor de b'));
+let c = parseInt(prompt('Ingrese el valor de c'));
 
-let area= (2 * (pi * rad**2)) + ((2 * pi * rad) * alt)
-let vol= (pi * rad**2) * alt
+res= a * x**2 + b * x + c
 
-document.getElementById('area').innerHTML = area;
-document.getElementById('vol').innerHTML = vol;
+document.getElementById('res').innerHTML = res;
 
 
 
