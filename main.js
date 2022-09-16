@@ -1,15 +1,15 @@
-alert('hallar la siguiente formula (a+7*c)/(b+2-a)+2*b ')
+alert('hallar el area y el volumen de un cilindro')
 
 const pi = 3.1416;
 
-let a = parseInt(prompt('Ingrese el valor de a'));
-let b = parseInt(prompt('Ingrese el valor de b'));
-let c = parseInt(prompt('Ingrese el valor de c'));
+let rad = parseInt(prompt('Ingrese el raio del cilindro'));
+let alt = parseInt(prompt('Ingrese la altura del cilindro'));
 
+let area= (2 * (pi * rad**2)) + ((2 * pi * rad) * alt)
+let vol= (pi * rad**2) * alt
 
-let formula = (a+7*c)/(b+2-a)+2*b;
-
-document.getElementById('formula').innerHTML = formula;
+document.getElementById('area').innerHTML = area;
+document.getElementById('vol').innerHTML = vol;
 
 
 
