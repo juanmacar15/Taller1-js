@@ -1,13 +1,15 @@
-alert('hallar el volumen de una esfera')
+alert('hallar la siguiente formula (a+7*c)/(b+2-a)+2*b ')
 
 const pi = 3.1416;
 
-let radio = parseInt(prompt('Ingrese el radio de la esfera'));
+let a = parseInt(prompt('Ingrese el valor de a'));
+let b = parseInt(prompt('Ingrese el valor de b'));
+let c = parseInt(prompt('Ingrese el valor de c'));
 
 
-let vol = 4/3 * pi * radio ** 3;
+let formula = (a+7*c)/(b+2-a)+2*b;
 
-document.getElementById('vol').innerHTML = vol;
+document.getElementById('formula').innerHTML = formula;
 
 
 
