@@ -1,12 +1,11 @@
-alert('hallar la media de 4 numeros')
-let n1 = parseInt(prompt('Ingrese el primer numero'));
-let n2 = parseInt(prompt('Ingrese el segundo numero'));
-let n3 = parseInt(prompt('Ingrese el tercer numero'));
-let n4 = parseInt(prompt('Ingrese el cuarto numero'));
-
-let media = (n1 + n2 + n3 + n4) / 4;
+alert('hallar el area de un triangulo')
+let base = parseInt(prompt('Ingrese la base'));
+let alt = parseInt(prompt('Ingrese la altura'));
 
 
-document.getElementById('media').innerHTML = media;
+let area = (base * alt) / 2;
+
+
+document.getElementById('area').innerHTML = area;
 
 
