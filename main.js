@@ -1,14 +1,14 @@
-alert('hallar el volumen de un elipsoide ')
+alert('venta de minutos ')
 
-const pi = 3.1416;
+const min = 355;
 
-let a = parseInt(prompt('Ingrese el valor de a'));
-let b = parseInt(prompt('Ingrese el valor de b'));
-let c = parseInt(prompt('Ingrese el valor de c'));
+let tiempo = parseInt(prompt('¿cuantos minutos hablò?'));
 
-vol= (4/3) * pi * a * b * c
+let tTotal = tiempo * min;
+let iva = tTotal * 0.20;
+let totalpagar = tTotal + iva;
 
-document.getElementById('res').innerHTML = vol;
+document.getElementById('res').innerHTML = totalpagar + ' pesos';
 
 
 
