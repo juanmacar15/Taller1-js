@@ -1,13 +1,11 @@
-alert('descuento de producto ')
+alert('conversor de grados ')
 
-let prod = parseFloat(prompt('ingrese el valor del producto'));
+let g = parseFloat(prompt('digite los grados en centigrados'));
 
-let des = prod * 0.10;
-let res =  prod - des;
+let far = (g *(9/5)) + 32;
 
-document.getElementById('prod').innerHTML = prod;
-document.getElementById('des').innerHTML = des;
-document.getElementById('res').innerHTML = res;
+document.getElementById('res').innerHTML = far +' f';
+
 
 
 
