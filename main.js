@@ -1,21 +1,18 @@
-alert('promedio estudiante ')
-alert('porfavor ingresar las notas de 1 a 5 ')
+alert('sueldo de ventas ')
 
-let exa1 = parseFloat(prompt('ingrese la nota del primer examen'));
-let exa2 = parseFloat(prompt('ingrese la nota del segundo examen'));
-let exa3 = parseFloat(prompt('ingrese la nota del tercer examen'));
-let exa4 = parseFloat(prompt('ingrese la nota del cuarto examen'));
 
-if (exa1<=5 && exa2<=5 && exa3<=5 && exa4<=5){
+let sueldo = parseFloat(prompt('ingrese el sueldo del empleado'));
+let venta1 = parseFloat(prompt('ingrese el precio de la primera venta'));
+let venta2 = parseFloat(prompt('ingrese el precio de la segunda venta'));
+let venta3 = parseFloat(prompt('ingrese el precio de la tercera venta'));
 
-    let pro=(exa1+exa2+exa3+exa4)/4;
+let com = (venta1 + venta2 + venta3) * 0.10;
+let total = sueldo + com;
 
-    document.getElementById('nota').innerHTML = pro;
+document.getElementById('com').innerHTML = com + ' pesos';
+document.getElementById('total').innerHTML = total + ' pesos';
 
-}
-else{
-    alert('porfavor ingrese las notas de 1 a 5')
-}
+
 
 
 
