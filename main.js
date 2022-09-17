@@ -1,14 +1,14 @@
-alert('hallar la raiz real de la siguiente ecuacion a * x2 + b * x + c siendo x un valor constante ')
+alert('hallar el volumen de un elipsoide ')
 
-const x = 3;
+const pi = 3.1416;
 
 let a = parseInt(prompt('Ingrese el valor de a'));
 let b = parseInt(prompt('Ingrese el valor de b'));
 let c = parseInt(prompt('Ingrese el valor de c'));
 
-res= a * x**2 + b * x + c
+vol= (4/3) * pi * a * b * c
 
-document.getElementById('res').innerHTML = res;
+document.getElementById('res').innerHTML = vol;
 
 
 
