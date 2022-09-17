@@ -1,10 +1,19 @@
-alert('conversor de grados ')
+alert('promedio de materia ')
 
-let g = parseFloat(prompt('digite los grados en centigrados'));
+let par1 = parseFloat(prompt('nota del primer parcial'));
+let par2 = parseFloat(prompt('nota del segundo parcial'));
+let par3 = parseFloat(prompt('nota del tercer parcial'));
+let exa = parseFloat(prompt('nota el examen final'));
+let tra = parseFloat(prompt('nota del trabajo final'));
 
-let far = (g *(9/5)) + 32;
 
-document.getElementById('res').innerHTML = far +' f';
+let a=((par1+par2+par3)/3)*0.55;
+let b=exa*0.30;
+let c=tra*0.15;
+
+let cal=a+b+c;
+
+document.getElementById('res').innerHTML = cal;
 
 
 
