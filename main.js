@@ -1,15 +1,15 @@
-alert('IVA de producto ')
+alert('sueldo empleado ')
 
-let pro = parseFloat(prompt('valor del producto'));
-let iva = parseFloat(prompt('digite el iva sin el singo %'));
+let pagoH = 15300;
 
-let iva2=iva/100;
-let iva3=pro*iva2;
+let nombre = (prompt('ingrese su nombre'));
+let horas = parseFloat(prompt('ingrese las horas trabajadas'));
 
-let total = pro + iva3;
+let pago = horas * pagoH;
 
-document.getElementById('iva').innerHTML = iva3 + ' pesos';
-document.getElementById('res').innerHTML = total + ' pesos';
+document.getElementById('nombre').innerHTML = nombre;
+document.getElementById('res').innerHTML = pago + ' pesos';
+
 
 
 
