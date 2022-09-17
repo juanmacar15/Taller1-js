@@ -1,14 +1,10 @@
-alert('venta de minutos ')
+alert('conversor de velocidad ')
 
-const min = 355;
+let vel = parseFloat(prompt('ingrese la velocidad en km'));
 
-let tiempo = parseInt(prompt('¿cuantos minutos hablò?'));
+let res = vel * (1000) * (1/3600);
 
-let tTotal = tiempo * min;
-let iva = tTotal * 0.20;
-let totalpagar = tTotal + iva;
-
-document.getElementById('res').innerHTML = totalpagar + ' pesos';
+document.getElementById('res').innerHTML = res + ' m/s';
 
 
 
