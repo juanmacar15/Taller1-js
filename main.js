@@ -1,10 +1,13 @@
-alert('conversor de velocidad ')
+alert('descuento de producto ')
 
-let vel = parseFloat(prompt('ingrese la velocidad en km'));
+let prod = parseFloat(prompt('ingrese el valor del producto'));
 
-let res = vel * (1000) * (1/3600);
+let des = prod * 0.10;
+let res =  prod - des;
 
-document.getElementById('res').innerHTML = res + ' m/s';
+document.getElementById('prod').innerHTML = prod;
+document.getElementById('des').innerHTML = des;
+document.getElementById('res').innerHTML = res;
 
 
 
